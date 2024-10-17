@@ -94,6 +94,7 @@ if (isset($_POST['update'])) {
 
         <input type="submit" name="update" value="Update Task">
     </form>
+    <br>
     <a href="viewTasks.php" class="view-button"><b>Back to view Tasks</b></a>
 </div>
 
