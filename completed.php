@@ -2,7 +2,7 @@
 include 'dbConfig.php';
 
 if (isset($_GET['id'])) {
-    $taskId = $_GET['id'];
+    $taskId = intval($_GET['id']);
 
     $sql = "SELECT status FROM tasks WHERE id = $taskId";
     $result = $conn->query($sql);

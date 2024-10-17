@@ -6,7 +6,7 @@ $errors = [];
 
 
 if (isset($_GET['id'])) {
-    $id = $_GET['id']; 
+    $id = intval($_GET['id']); 
 
    
     $sql = "SELECT * FROM tasks WHERE id = $id";
@@ -92,9 +92,9 @@ if (isset($_POST['update'])) {
         <label for="due_date_time">Due Date & Time</label>
         <input type="datetime-local" name="due_date_time" id="due_date_time" value="<?php echo $due_date_time; ?>">
 
-        <input type="submit" name="update" value="Update & Save Task">
+        <input type="submit" name="update" value="Update Task">
     </form>
-    <a href="viewTasks.php" class="view-button"><b>Back yo view Tasks</b></a>
+    <a href="viewTasks.php" class="view-button"><b>Back to view Tasks</b></a>
 </div>
 
 </body>
