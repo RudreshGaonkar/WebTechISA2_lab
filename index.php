@@ -54,7 +54,7 @@ if (isset($_POST['submit'])) {
 <body>
 
 <div class="container">
-    <h2>Task Manager</h2>
+    <h2>Task</h2>
 
     
     <?php
